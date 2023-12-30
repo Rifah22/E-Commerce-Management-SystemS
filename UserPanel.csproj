@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E525632C-5997-40EB-B68B-463E771CF958}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UserPanel</RootNamespace>
+    <AssemblyName>UserPanel</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCart.Designer.cs">
+      <DependentUpon>AddCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="LogINForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogINForm.Designer.cs">
+      <DependentUpon>LogINForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderHistory.Designer.cs">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsList.Designer.cs">
+      <DependentUpon>ProductsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassForm1.Designer.cs">
+      <DependentUpon>ResetPassForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BkashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BkashForm.Designer.cs">
+      <DependentUpon>BkashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoketForm.Designer.cs">
+      <DependentUpon>RoketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NogodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NogodForm.Designer.cs">
+      <DependentUpon>NogodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewCartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCartForm.Designer.cs">
+      <DependentUpon>ViewCartForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCart.resx">
+      <DependentUpon>AddCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogINForm.resx">
+      <DependentUpon>LogINForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderHistory.resx">
+      <DependentUpon>OrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsList.resx">
+      <DependentUpon>ProductsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassForm1.resx">
+      <DependentUpon>ResetPassForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BkashForm.resx">
+      <DependentUpon>BkashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoketForm.resx">
+      <DependentUpon>RoketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NogodForm.resx">
+      <DependentUpon>NogodForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ViewCartForm.resx">
+      <DependentUpon>ViewCartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogIN_pic1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogIN_pic2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in log-in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in signup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forget_Gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in ForGot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistrationPic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuBackButton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuForwordButton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BestSeller1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BestSeller01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuProduct2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Border.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Border1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Border01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Border011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Border02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Border03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product101.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productPanel102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productPanel103.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProductPanel104.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelProduct105.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelProduct1051.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelProduct106.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelProduct1061.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelProduct107.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panelProduct108.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClearIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CartIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in previous1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nagad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in signup1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in log-in21.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

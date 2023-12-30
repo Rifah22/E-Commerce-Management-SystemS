@@ -1,0 +1,2 @@
+﻿
+SELECT SCOPE_IDENTITY();
